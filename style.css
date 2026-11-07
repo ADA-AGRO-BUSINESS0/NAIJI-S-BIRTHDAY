@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #fce4ec, #fff8f0);
+    color: #543746;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.top-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #bb718f;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.heart {
+    font-size: 40px;
+    color: #d45b87;
+    animation: heartbeat 1.5s infinite;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(40px, 9vw, 68px);
+    font-weight: normal;
+    color: #b84f78;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: clamp(38px, 8vw, 55px);
+    color: #793c59;
+    letter-spacing: 2px;
+}
+
+.date {
+    margin-top: 15px;
+    color: #b76b87;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.separator {
+    color: #d66c91;
+    margin: 25px 0;
+    font-size: 15px;
+}
+
+.intro {
+    max-width: 450px;
+    margin: auto auto 35px;
+    font-size: 14px;
+    line-height: 2;
+    color: #795c69;
+}
+
+.photo-frame {
+    max-width: 420px;
+    margin: 30px auto 45px;
+    padding: 12px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(160, 77, 111, 0.18);
+    transform: rotate(-1deg);
+    transition: 0.4s;
+}
+
+.photo-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.photo-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 570px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.photo-frame p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: #b84f78;
+    padding: 14px 5px 5px;
+}
+
+.message-card {
+    background: rgba(255,255,255,0.82);
+    padding: 35px 28px;
+    border-radius: 20px;
+    margin: 40px auto;
+    box-shadow: 0 10px 35px rgba(150,76,105,0.08);
+    border: 1px solid white;
+}
+
+.message-card h3,
+.gift-message h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #bd547c;
+    margin-bottom: 25px;
+}
+
+.message-card p,
+.gift-message p {
+    font-size: 13px;
+    line-height: 2.1;
+    margin-bottom: 18px;
+    color: #715361;
+}
+
+.message-card .highlight {
+    color: #ad426d;
+    font-weight: 600;
+}
+
+.signature {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #886276;
+    font-style: italic;
+}
+
+.signature strong {
+    display: block;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #bd547c;
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    background: linear-gradient(135deg, #d65d88, #a93e6c);
+    color: white;
+    padding: 16px 30px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(184,79,120,0.25);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+}
+
+.gift-message {
+    display: none;
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    margin: 30px auto;
+    max-width: 500px;
+    box-shadow: 0 10px 35px rgba(150,76,105,0.12);
+}
+
+.gift-message.show {
+    display: block;
+    animation: appear 0.6s ease;
+}
+
+.gift-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.gift-message .special {
+    color: #bd547c;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.last-signature {
+    display: block;
+    text-align: right;
+    color: #bd547c;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 55px;
+    font-size: 11px;
+    color: #a77b8e;
+    line-height: 2.2;
+    letter-spacing: 2px;
+}
+
+.hearts span {
+    position: fixed;
+    bottom: -50px;
+    color: rgba(203,91,135,0.25);
+    font-size: 25px;
+    animation: float 12s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hearts span:nth-child(1) { left: 10%; }
+.hearts span:nth-child(2) { left: 25%; animation-delay: 3s; }
+.hearts span:nth-child(3) { left: 45%; animation-delay: 6s; }
+.hearts span:nth-child(4) { left: 65%; animation-delay: 2s; }
+.hearts span:nth-child(5) { left: 80%; animation-delay: 5s; }
+.hearts span:nth-child(6) { left: 92%; animation-delay: 8s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 40px 17px;
+    }
+
+    .message-card {
+        padding: 28px 20px;
+    }
+
+    .message-card p {
+        font-size: 12px;
+    }
+
+    .top-label {
+        letter-spacing: 2px;
+    }
+}

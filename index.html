@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Najimiya ❤️</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="hearts">
+        <span>♥</span><span>♡</span><span>♥</span>
+        <span>♡</span><span>♥</span><span>♡</span>
+    </div>
+
+    <main class="container">
+
+        <p class="top-label">UNE JOURNÉE SPÉCIALE POUR TOI ✨</p>
+
+        <div class="heart">♡</div>
+
+        <h1>Joyeux anniversaire</h1>
+        <h2>Najimiya</h2>
+
+        <p class="date">08 NOVEMBRE 2026 🎂</p>
+
+        <div class="separator">───── ♥ ─────</div>
+
+        <p class="intro">
+            Aujourd'hui, le monde célèbre une personne spéciale.
+            Et moi, je voulais prendre un petit moment pour célébrer
+            la belle personne que tu es.
+        </p>
+
+        <div class="photo-frame">
+            <img src="image/naiji.jpeg" alt="Un beau souvenir">
+            <p>Un souvenir, une personne, une belle histoire ❤️</p>
+        </div>
+
+        <section class="message-card">
+
+            <h3>Quelques mots pour toi...</h3>
+
+            <p>
+                Najimiya, en ce jour spécial, je voulais simplement
+                te rappeler que tu comptes beaucoup pour moi.
+            </p>
+
+            <p>
+                Tu as une place particulière dans mon cœur
+                et même si je ne trouve pas toujours les mots
+                pour exprimer ce que je ressens, sache que
+                ta présence représente énormément pour moi.
+            </p>
+
+            <p>
+                Je te souhaite une vie remplie de bonheur,
+                une excellente santé, beaucoup de réussite
+                et surtout la réalisation de tous tes rêves.
+            </p>
+
+            <p>
+                Que cette nouvelle année t'apporte de belles
+                surprises, des sourires sincères et des moments
+                que tu n'oublieras jamais.
+            </p>
+
+            <p class="highlight">
+                Tu es une personne précieuse.
+                Ne doute jamais de la belle personne que tu es.
+                Tu mérites tout ce qu'il y a de meilleur. ❤️
+            </p>
+
+            <div class="signature">
+                Avec beaucoup d'affection...
+                <strong>A ❤️</strong>
+            </div>
+
+        </section>
+
+        <button id="giftButton">
+            Ouvre ton petit cadeau 🎁
+        </button>
+
+        <section id="giftMessage" class="gift-message">
+
+            <div class="gift-icon">💗</div>
+
+            <h3>Une dernière chose...</h3>
+
+            <p>
+                Parmi toutes les personnes que la vie nous
+                permet de rencontrer, certaines deviennent
+                particulièrement importantes.
+            </p>
+
+            <p>
+                Et toi, Najimiya, tu fais partie de ces personnes.
+                Je voulais simplement que tu le saches.
+            </p>
+
+            <p class="special">
+                Joyeux anniversaire, ma précieuse ! ❤️
+            </p>
+
+            <strong class="last-signature">— A</strong>
+
+        </section>
+
+        <footer>
+            Fait avec ❤️ pour Najimiya
+            <br>
+            08.11.2026
+        </footer>
+
+    </main>
+
+    <script>
+        const button = document.getElementById("giftButton");
+        const gift = document.getElementById("giftMessage");
+
+        button.addEventListener("click", () => {
+            gift.classList.toggle("show");
+
+            button.textContent = gift.classList.contains("show")
+                ? "Refermer mon cadeau 💗"
+                : "Ouvre ton petit cadeau 🎁";
+        });
+    </script>
+
+</body>
+</html>
